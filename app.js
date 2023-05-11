@@ -16,8 +16,8 @@ const next = () => {
   const procent = (100 / sliderItems.length) * (nextSlideIndex)
   line.forEach(el => el.style.left = `${procent}%`)
   nextSlide.scrollIntoView({
-    block: 'center',
-    inline: 'center'
+    inline: 'center',
+    block: 'nearest',
   })
 }
 
@@ -33,8 +33,8 @@ const prew = () => {
   const procent = (100 / sliderItems.length) * (nextSlideIndex)
   line.forEach(el => el.style.left = `${procent}%`)
   nextSlide.scrollIntoView({
-    block: 'center',
-    inline: 'center'
+    inline: 'center',
+    block: 'nearest',
   })
 }
 
